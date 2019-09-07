@@ -1,0 +1,175 @@
+---
+---
+
+@import "minima";
+
+
+.fancy-card {
+    box-shadow: 0 2px 20px rgba(0, 0, 0, .164);
+    border-radius: 30px;
+    background-color: white;
+    margin: 3% auto 3% auto !important;
+    padding: 2%;
+    width: 75%;
+}
+
+.bg-white{
+    background-color: white;
+}
+
+.bg-grey{
+    background: $grey-color-really-light;
+}
+
+.text-grey{
+    color: $grey-color;
+}
+
+label{
+    display: none !important;
+}
+
+.button {
+    color: white !important;
+    text-decoration: none !important;
+    background: $highlight-color;
+    border-radius: 30px;
+    padding: 2% 4%;
+    border: none;
+    transition: all 0.4s ease 0s;
+    margin: 2%;
+}
+
+.button:hover {
+    background: $blue-color-dark;
+    color: white !important;
+}
+
+#active{
+    color: $highlight-color !important;
+}
+
+
+h2.section-title {
+    color: #333;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: relative;
+    margin: 5% auto 2.5% auto;
+}
+
+h2.section-title::after {
+    content: "";
+    width: 100px;
+    position: absolute;
+    margin: 0 auto;
+    height: 3px;
+    background: $highlight-color;
+    left: 0;
+    right: 0;
+    bottom: -10px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: $primary-color;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    float: none;
+    color: black !important;
+    padding: 0 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.intro-title{
+    font-size: 4rem;
+    margin-bottom: 5%;
+}
+
+.row{
+    margin: 0 !important;
+}
+
+.intro{
+    height: 500px;
+    display: table;
+    margin: auto;
+}
+
+.intro-text{
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.learning-site-info{
+    display: table;
+    margin: auto;
+}
+
+.learning-site-text{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#learning-sites{
+    h1{
+        margin-bottom: 5%;
+    }
+
+    .col{
+        height: 650px;
+
+        &.image-container{
+            padding: 0;
+            display: table;
+
+            .image{
+                display: table-cell;
+                vertical-align: middle;
+
+                img{
+                    max-height: 650px;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+
+        &.text{
+            text-align: justify;
+            padding: 4%;
+        }
+    }
+}
+.hero-image-container{
+    position: relative;
+
+    .hero-text{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        color: white;
+    }
+
+    img{
+        object-fit: cover;
+        height: 750px;
+        width: 100%;
+    }
+}

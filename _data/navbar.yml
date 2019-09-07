@@ -1,0 +1,20 @@
+- title: Home
+  url: /
+- title: Learn
+  url: /learn/
+  subpages: 
+    - title: Code
+      url: /learn/code/
+    - title: Practice
+      url: /learn/practice/
+- title: Ethics
+  url: /ethics/
+- title: Events
+  url: /events/
+  subpages: 
+    - title: Conferences
+      url: /events/conferences/
+    - title: Camps
+      url: /events/camps/
+- title: Contact
+  url: /contact/
