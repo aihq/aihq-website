@@ -7,7 +7,7 @@ permalink: /learn/code/
 <div class="intro">
     <div class="intro-text">
         <h1 class="intro-title"><b>Learn to Code</b></h1>
-        <h4 class="text-grey">Basically a little blurp explaining why learning to code helps open doors and helps to learn about AI</h4>
+        <h4 class="text-grey">Basically a little blurb explaining why learning to code helps open doors and helps to learn about AI</h4>
     </div>
 </div>
 
