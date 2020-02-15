@@ -7,7 +7,7 @@
   // Positioning context for the mobile navigation icon
   position: relative;
 
-  box-shadow: 0 5px 6px -6px $grey-color-light;
+  // box-shadow: 0 5px 6px -6px $grey-color-light;
 }
 
 #home-header{
@@ -23,9 +23,9 @@
   margin-bottom: 0;
   float: left;
 
-  & {
-    color: black;
-  }
+  // & {
+  //   color: black;
+  // }
 }
 
 .site-nav {
@@ -42,7 +42,7 @@
   }
 
   .navbar-link {
-    color: black;
+    // color: black;
     // line-height: $base-line-height;
 
     // Gaps between nav items, but not on the last one
@@ -187,7 +187,7 @@
 .page-content {
   // padding: $spacing-unit 0;
   flex: 1;
-  background: $grey-color-really-light;
+  // background: $grey-color-really-light;
 }
 
 .page-heading {

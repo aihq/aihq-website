@@ -2,13 +2,14 @@
 layout: page
 title: Conferences
 permalink: /events/conferences/
+hero-title: A one-stop list of tech-related and AI events near you
 ---
 
-<div class="intro">
+<!-- <div class="intro">
     <div class="intro-text">
         <h1 class="intro-title"><b>A one-stop list of tech-related and AI events near you</b></h1>
     </div>
-</div>
+</div> -->
 
 <div class="bg-white">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3152.1219600293193!2d-122.26906568433648!3d37.810612217869135!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580c4fde0a449%3A0x2c065b53e163961a!2sAi4all!5e0!3m2!1sen!2sus!4v1567823973597!5m2!1sen!2sus" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
