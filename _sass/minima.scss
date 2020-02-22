@@ -17,10 +17,12 @@ $grey-color-dark:  darken($grey-color, 25%) !default;
 
 $blue-color:       #2a7ae2 !default;
 $blue-color-dark:  darken($blue-color, 25%) !default;
+$blue-color-light:  lighten($blue-color, 35%) !default;
 
 $primary-color:    #ffffff !default;
 $secondary-color:  $grey-color-light !default;
-$highlight-color:  #ef473a !default;
+// $highlight-color:  #ef473a !default;
+$highlight-color:  $blue-color !default;
 
 $table-text-align: left !default;
 

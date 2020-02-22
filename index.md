@@ -28,7 +28,8 @@ hero-subtitle: Increasing the diversity in AI
                 </div>
                 <div class="page-card-description">
                     <p>
-                        Learn how to code AI algorithms to conceptialize and implement in you next project
+                        <!-- Learn how to code AI algorithms to conceptialize and implement in you next project -->
+                        Learn how to code AI algorithms
                     </p>
                 </div>
             </div>
@@ -43,7 +44,8 @@ hero-subtitle: Increasing the diversity in AI
                 </div>
                 <div class="page-card-description">
                     <p>
-                        Examine stories and case studies of the implications and ethics of AI and its use
+                        <!-- Examine stories and case studies of the implications and ethics of AI and its use -->
+                        Examine case studies of the implications of AI
                     </p>
                 </div>
             </div>
@@ -58,7 +60,8 @@ hero-subtitle: Increasing the diversity in AI
                 </div>
                 <div class="page-card-description">
                     <p>
-                        Find a tech camp or conference near you to build your skills and expand your network
+                        <!-- Find a tech camp or conference near you to build your skills and expand your network -->
+                        Pursue your passion at local camps and conferences
                     </p>
                 </div>
             </div>

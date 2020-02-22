@@ -8,13 +8,16 @@ layout: default
   </header> -->
 
   <div class="post-content">
-  <div class="hero-image-container">
-    <img src="{{site.baseurl}}/assets/img/{{page.title}}-hero.jpg">
-    <div class="hero-text">
-      <h1 class="intro-title"><b>{{page.hero-title}}</b></h1>
-      <h4>{{page.hero-subtitle}}</h4>
+    <div class="hero-image-container">
+      {% if page.title != "Contact" %}
+      <div class="overlay"></div>
+      <img src="{{site.baseurl}}/assets/img/{{page.title}}-hero.png">
+      {% endif %}
+      <div class="hero-text">
+        <h1 class="intro-title"><b>{{page.hero-title}}</b></h1>
+        <h4>{{page.hero-subtitle}}</h4>
+      </div>
     </div>
-  </div>
 
     {{ content }}
   </div>

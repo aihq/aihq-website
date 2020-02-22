@@ -13,7 +13,7 @@ hero-subtitle: Opening doors to AI
     </div>
 </div> -->
 
-<div id="learning-sites">
+<!-- <div id="learning-sites">
     <div class="bg-alternating">
         <div class="row">
             <div class="col text learning-site-info">
@@ -150,6 +150,25 @@ hero-subtitle: Opening doors to AI
                     occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.s
                 </p>
                 </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+<div class="jumbotron jumbotron-fluid">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm">
+                <div class="fancy-card" style="background-image: url(/aihq-website/assets/img/ai4all-logo.png);"></div>
+            </div>
+            <div class="col-sm">
+                <div class="fancy-card" style="background-image: url(/aihq-website/assets/img/coursera-logo.png); background-size: contain;"></div>
+            </div>
+            <div class="col-sm">
+                <div class="fancy-card" style="background-image: url(/aihq-website/assets/img/codeacademy-logo.png);"></div>
+            </div>
+            <div class="col-sm">
+                <div class="fancy-card" style="background-image: url(/aihq-website/assets/img/edx-logo.png);"></div>
             </div>
         </div>
     </div>
