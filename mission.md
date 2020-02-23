@@ -14,12 +14,12 @@ hero-title: Our Mission
     <div class="row">
         <h2 class="section-title">About Us</h2>
         <div class="col-sm">
-            <img src="/aihq-website/assets/img/ai4all-logo.png" class="avatar">
+            <img src="/aihq-website/assets/img/ai4all-logo.png" class="avatar" alt="Ekanem Okeke">
             <h3>Ekanem Okeke</h3>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
         </div>
         <div class="col-sm">
-            <img src="/aihq-website/assets/img/ai4all-logo.png" class="avatar">
+            <img src="/aihq-website/assets/img/ai4all-logo.png" class="avatar" alt="Milan Ferus-Comelo">
             <h3>Milan Ferus-Comelo</h3>
             <p>Milan Ferus-Comelo is a Senior at Albany High who is passionate about technology, human rights, and public policy. Having experienced dramatic technological development, he wishes to explore how society is affected by technology. </p>
         </div>
