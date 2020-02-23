@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Practice
-permalink: /learn/practice/
+permalink: /practice/
 hero-title: So you already have the skills...
 ---
 

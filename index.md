@@ -29,7 +29,7 @@ hero-subtitle: Increasing the diversity in AI
                 <div class="page-card-description">
                     <p>
                         <!-- Learn how to code AI algorithms to conceptialize and implement in you next project -->
-                        Learn how to code AI algorithms
+                        Learn how to code AI algorithms on your own
                     </p>
                 </div>
             </div>

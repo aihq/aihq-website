@@ -1,20 +1,22 @@
 - title: Home
   url: /
+- title: Our Mission
+  url: /mission/
 - title: Learn
   # url: /learn/
   subpages: 
     - title: Code
-      url: /learn/code/
+      url: /code/
     - title: Practice
-      url: /learn/practice/
+      url: /practice/
 - title: Ethics
   url: /ethics/
 - title: Events
   # url: /events/
   subpages: 
     - title: Conferences
-      url: /events/conferences/
+      url: /conferences/
     - title: Camps
-      url: /events/camps/
+      url: /camps/
 - title: Contact
   url: /contact/

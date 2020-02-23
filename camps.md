@@ -1,6 +1,6 @@
 ---
 layout: page
 title: Camps
-permalink: /events/camps/
+permalink: /camps/
 hero-title: Camps
 ---

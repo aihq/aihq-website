@@ -53,11 +53,10 @@
 
         {%- if my_page.subpages -%}
         <div class="dropdown">
-          <a class="navbar-link dropbtn" {%- if page.title == my_page.title -%} id="active" {%- endif -%}
-            href="{{ my_page.url | relative_url}}">
+          <div class="navbar-link dropbtn">
             {{ my_page.title | escape }}
             <i class="fa fa-caret-down"></i>
-          </a>
+          </div>
           <div class="dropdown-content">
             {%- for subpage in my_page.subpages -%}
             <a class="navbar-link" {%- if page.title == subpage.title -%} id="active" {%- endif -%}

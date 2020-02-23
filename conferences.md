@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Conferences
-permalink: /events/conferences/
+permalink: /conferences/
 hero-title: A one-stop list of tech-related and AI events near you
 ---
 
