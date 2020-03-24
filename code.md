@@ -7,6 +7,7 @@ hero-subtitle: Opening doors to AI
 websites:
     - name: ai4all
       title: AI4ALL
+      link: http://ai-4-all.org/
       courses:
       - name: What is AI?
         link: https://ai4all.docebosaas.com/learn/course/19/unit-plans-and-facilitation-guides-10-hours;lp=6
@@ -19,6 +20,7 @@ websites:
 
     - name: coursera
       title: Coursera
+      link: https://www.coursera.org/
       courses:
       - name: Introduction to TensorFlow for Artificial Intelligence, Machine Learning, and Deep Learning
         link: https://www.coursera.org/learn/introduction-tensorflow
@@ -31,6 +33,7 @@ websites:
 
     - name: codecademy
       title: Codecademy
+      link: https://www.codecademy.com/
       courses:
       - name: Get started with Machine Learning
         link: https://www.codecademy.com/learn/paths/machine-learning
@@ -43,6 +46,7 @@ websites:
 
     - name: edx
       title: EdX
+      link: https://www.edx.org/
       courses:
       - name: Introduction to Artificial Intelligence (AI)
         link: https://www.edx.org/course/introduction-to-artificial-intelligence-ai-2
@@ -55,6 +59,7 @@ websites:
     
     - name: cognitiveclass
       title: Cognitive Class
+      link: https://cognitiveclass.ai/
       courses:
       - name: Build Your Own Chatbot
         link: https://cognitiveclass.ai/courses/how-to-build-a-chatbot
@@ -65,6 +70,13 @@ websites:
         description: Machine Learning can be an incredibly beneficial tool to uncover hidden insights and predict future trends. This free Machine Learning with Python course will give you all the tools you need to get started with supervised and unsupervised learning.
         difficulty: intermediate
 ---
+
+<div class="container">
+  <div class="row">
+    <p>Unfortunately, AIHQ does not currently offer its own courses, however we do recommend these websites</p>
+    <p>Click on the cards to explore our recommendations for courses ranging in difficulty. If you don't know where to begin, we recommend getting started with AI4ALL's Open Learning Program</p>
+  </div>
+</div>
 
 <div class="jumbotron jumbotron-fluid">
     <div class="container">
@@ -96,7 +108,7 @@ websites:
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title">{{ website.title }}</h5>
+        <h5 class="modal-title"><a href="{{ website.link }}" target="_blank">{{ website.title }}</a></h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>

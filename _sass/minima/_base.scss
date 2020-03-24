@@ -118,6 +118,20 @@ a {
       text-decoration: underline;
     }
   }
+
+  &.card-link{
+    color: black;
+
+    .fancy-card{
+      transition: transform .2s;
+
+      &:hover{
+        box-shadow: 6px 6px 12px 6px rgba(7, 0, 0, 0.07) !important;
+        transform: scale(1.05);
+        cursor: pointer !important;
+      }
+    }
+  }
 }
 
 

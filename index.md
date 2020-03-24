@@ -19,52 +19,61 @@ hero-subtitle: Increasing the diversity in AI
 <div class="container">
     <div class="row">
         <div class="col-sm">
-            <div class="fancy-card">
-                <div class="page-card-symbol">
-                    <h1><i class="fas fa-code"></i></h1>
+            <a class="card-link" href="{{site.baseurl}}/code/">
+                <div class="fancy-card">
+                    <div class="fancy-card-overlay"></div>
+                    <div class="page-card-symbol">
+                        <h1><i class="fas fa-code"></i></h1>
+                    </div>
+                    <div class="page-card-title">
+                        <h3>Learn</h3>
+                    </div>
+                    <div class="page-card-description">
+                        <p>
+                            <!-- Learn how to code AI algorithms to conceptialize and implement in you next project -->
+                            Learn how to code AI algorithms on your own
+                        </p>
+                    </div>
                 </div>
-                <div class="page-card-title">
-                    <h3>Learn</h3>
-                </div>
-                <div class="page-card-description">
-                    <p>
-                        <!-- Learn how to code AI algorithms to conceptialize and implement in you next project -->
-                        Learn how to code AI algorithms on your own
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm">
-            <div class="fancy-card">
-                <div class="page-card-symbol">
-                    <h1><i class="fas fa-balance-scale"></i></h1>
+            <a class="card-link" href="{{site.baseurl}}/ethics/">
+                <div class="fancy-card">
+                    <div class="fancy-card-overlay"></div>
+                    <div class="page-card-symbol">
+                        <h1><i class="fas fa-balance-scale"></i></h1>
+                    </div>
+                    <div class="page-card-title">
+                        <h3>Question</h3>
+                    </div>
+                    <div class="page-card-description">
+                        <p>
+                            <!-- Examine stories and case studies of the implications and ethics of AI and its use -->
+                            Examine case studies of the implications of AI
+                        </p>
+                    </div>
                 </div>
-                <div class="page-card-title">
-                    <h3>Question</h3>
-                </div>
-                <div class="page-card-description">
-                    <p>
-                        <!-- Examine stories and case studies of the implications and ethics of AI and its use -->
-                        Examine case studies of the implications of AI
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
         <div class="col-sm">
-            <div class="fancy-card">
-                <div class="page-card-symbol">
-                    <h1><i class="fas fa-link"></i></h1>
+            <a class="card-link" href="{{site.baseurl}}/conferences/">
+                <div class="fancy-card">
+                    <div class="fancy-card-overlay"></div>
+                    <div class="page-card-symbol">
+                        <h1><i class="fas fa-link"></i></h1>
+                    </div>
+                    <div class="page-card-title">
+                        <h3>Connect</h3>
+                    </div>
+                    <div class="page-card-description">
+                        <p>
+                            <!-- Find a tech camp or conference near you to build your skills and expand your network -->
+                            Pursue your passion at local camps and conferences
+                        </p>
+                    </div>
                 </div>
-                <div class="page-card-title">
-                    <h3>Connect</h3>
-                </div>
-                <div class="page-card-description">
-                    <p>
-                        <!-- Find a tech camp or conference near you to build your skills and expand your network -->
-                        Pursue your passion at local camps and conferences
-                    </p>
-                </div>
-            </div>
+            </a>
         </div>
     </div>
 </div>

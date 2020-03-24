@@ -38,6 +38,20 @@
     .page-card-symbol i{
         color: $highlight-color;
     }
+
+    .fancy-card-overlay{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+        border-radius: 30px;
+        left: 0;
+        top: 0;
+
+        &:hover{
+            background-color: rgba(0,0,0,0.02);
+        }
+    }
 }
 
 .bg-alternating:nth-child(odd){
@@ -194,7 +208,7 @@ h2.section-title::after {
 
 .hero-image-container{
     position: relative;
-    height: 100vh;
+    height: 50vh;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -229,10 +243,7 @@ h2.section-title::after {
 
 .container{
     margin: 5% auto;
-}
-
-#Contact .site-header *{
-    color: black;
+    max-width: 75% !important;
 }
 
 .site-header{
@@ -259,10 +270,6 @@ h2.section-title::after {
     .hero-image-container{
         height: 50vh;
         background-color: $blue-color-light;
-    
-        *{
-            color: black;
-        }
     }
 
     .row *{
@@ -273,15 +280,19 @@ h2.section-title::after {
         font-size: 75px;
         width: 100%;
     }
+    
+    p{
+        width: 100%;
+    }
 
     // .jumbotron:nth-child(even){
     //     background-color: $blue-color;
     // }
 }
 
-.jumbotron:nth-child(odd){
-    background-color: $blue-color-light !important;
-}
+// .jumbotron:nth-child(odd){
+//     background-color: $blue-color-light !important;
+// }
 
 .jumbotron{
     margin: 0 !important;
@@ -293,11 +304,11 @@ h2.section-title::after {
 }
 
 #Code{
-    .jumbotron{
-        .row{
-            margin: 30px 0 !important;
-        }
+    p{
+        margin: auto;
+    }
 
+    .jumbotron{
         .fancy-card-container{
             position: relative;
             padding-bottom: 100%;
@@ -315,22 +326,6 @@ h2.section-title::after {
                     box-shadow: 6px 6px 12px 6px rgba(7, 0, 0, 0.07) !important;
                     transform: scale(1.05);
                     cursor: pointer !important;
-                }
-
-                .fancy-card-overlay{
-                    position: absolute;
-                    width: 100%;
-                    height: 100%;
-                    z-index: 1;
-                    border-radius: 30px;
-
-                    &:hover{
-                        background-color: rgba(0,0,0,0.02);
-
-                        // & + img{
-                        //     transform: scale(1.05);
-                        // }
-                    }
                 }
 
                 img{
@@ -387,4 +382,31 @@ h2.section-title::after {
         height: 250px;
         border-radius: 50%;
     }
+}
+
+.site-title{
+    background-repeat: no-repeat;
+    background-size: contain;
+    vertical-align: middle;
+    height: 50%;
+    width: 50%;
+    position: absolute;
+    left: 30px;
+    margin: 1.25% 0;
+}
+
+.logo-white{
+    background-image: url('{{ site.baseurl }}/assets/img/logo-white.png');
+}
+
+.logo-black{
+    background-image: url('{{ site.baseurl }}/assets/img/logo-black.png');
+}
+
+.col-sm{
+    padding: 2.5% !important;
+}
+
+.col-sm-4{
+    padding: 2.5% !important;
 }
