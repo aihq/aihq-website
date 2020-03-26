@@ -140,9 +140,14 @@ h2.section-title::after {
     }
 }
 
-.intro-title{
-    font-size: 4rem;
-    margin-bottom: 5%;
+.hero-text{
+    *{
+        margin: 0;
+    }
+
+    h4{
+        margin-top: 2.5%;
+    }
 }
 
 .row{
@@ -389,7 +394,7 @@ h2.section-title::after {
     background-size: contain;
     vertical-align: middle;
     height: 50%;
-    width: 50%;
+    width: 10%;
     position: absolute;
     left: 30px;
     margin: 1.25% 0;

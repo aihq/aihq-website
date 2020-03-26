@@ -1,5 +1,5 @@
 $(window).scroll(function() {
-    if($(this).scrollTop() > 300) {
+    if($(this).scrollTop() > ($('.site-header').height())) {
         $('.site-header').addClass('opaque');
 
         $('.site-title').removeClass('logo-white');
