@@ -1,0 +1,27 @@
+---
+layout: page
+title: Camps
+permalink: /camps/
+hero-title: Camps
+---
+
+<section>
+    <div class="camp-container">
+        {% for camp in site.data.camps %}
+        <div class="camp">
+            <h4><a href="{{ camp.link }}" target="_blank">{{ camp.name }}</a></h4>
+            <p class="camp-location">
+                <i class="fas fa-map-marker-alt"></i>
+                {{ camp.location }}
+            </p>
+            <p class="camp-date">
+                <i class="fas fa-calendar-day"></i>
+                {{ camp.date }}
+            </p>
+            <p class="camp-description">
+                {{ camp.description }}
+            </p>
+        </div>
+        {% endfor %}
+    </div>
+</section>

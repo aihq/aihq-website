@@ -103,11 +103,11 @@ h1, h2, h3, h4, h5, h6 {
  * Links
  */
 a {
-  color: $highlight-color;
+  color: $primary-color;
   text-decoration: none;
 
   &:hover {
-    color: $grey-color-dark !important;
+    color: $highlight-color !important;
     text-decoration: none !important;
   }
 

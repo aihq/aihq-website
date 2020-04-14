@@ -71,39 +71,72 @@ websites:
         difficulty: intermediate
 ---
 
-<div class="container">
-  <div class="row">
+<section>
+  <div class="container">
     <p>Unfortunately, AIHQ does not currently offer its own courses, however we do recommend these websites</p>
     <p>Click on the cards to explore our recommendations for courses ranging in difficulty. If you don't know where to begin, we recommend getting started with AI4ALL's Open Learning Program</p>
   </div>
-</div>
+</section>
 
-<div class="jumbotron jumbotron-fluid">
-    <div class="container">
-        <div class="row">
-            {% for website in page.websites %}
-            {% if forloop.index == 4 %}
-            </div> <!-- close previous row div tag -->
-            <div class="row"> <!-- open new row div tag -->
-            <div class="col-sm-2"></div>
-            {% endif %}
-            <div class="col-sm-4">
-                <div class="fancy-card-container">
-                    <div class="fancy-card" data-toggle="modal" data-target="#{{ website.name }}-modal">
-                        <div class="fancy-card-overlay"></div>
-                        <img id="card-image-{{ website.name }}" src="{{ site.baseurl }}/assets/img/{{ website.name }}-logo.png">
-                    </div>
-                </div>
-            </div>
-            {% if forloop.index == 5 %}
-            <div class="col-sm-2"></div>
-            {% endif %}
-            {% endfor %}
-        </div>
+<!-- <section>
+  <div class="container">
+    {% for website in page.websites %}
+    {% if forloop.index == 4 %}
     </div>
+    <div class="row">
+    <div class="col-sm-2"></div>
+    {% endif %}
+    <div class="col-sm-4">
+      <div class="fancy-card-container">
+        <div class="fancy-card" data-toggle="modal" data-target="#{{ website.name }}-modal">
+          <div class="fancy-card-overlay"></div>
+          <img id="card-image-{{ website.name }}" src="{{ site.baseurl }}/assets/img/{{ website.name }}-logo.png">
+        </div>
+      </div>
+    </div>
+    {% if forloop.index == 5 %}
+    <div class="col-sm-2"></div>
+    {% endif %}
+    {% endfor %}
+  </div>
+</section> -->
+
+<section>
+  <div class="website-cards">
+    {% for website in page.websites %}
+    <div class="fancy-card hover-effect" onclick="openModal('{{ website.name }}')">
+      <div class="fancy-card-overlay"></div>
+      <img id="card-image-{{ website.name }}" src="{{ site.baseurl }}/assets/img/{{ website.name }}-logo.png">
+    </div>
+    {% endfor %}
+  </div>
+</section>
+
+<div class="bg-modal">
+  {% for website in page.websites %}
+  <div class="fancy-card modal" id="modal-{{ website.name }}" style="display: none;">
+    <div class="close" onclick="closeModal('{{ website.name }}')">+</div>
+    <h3><a href="{{ website.link }}">{{ website.title }}</a></h3>
+
+    <h5>Suggested Courses:</h5>
+    {% for course in website.courses %}
+    <h6 class="course-name">
+      <b><a href="{{ course.link }}" target="_blank">{{ course.name }}</a></b>
+      <i class="fas fa-chevron-down"></i>
+    </h6>
+    <div class="course-panel">
+      <p>{{ course.description }}</p>
+      <!-- <div class="course-difficulty">
+        <img src="{{ site.baseurl }}/assets/img/{{ course.difficulty }}-bars.png">
+        <p>{{ course.difficulty | capitalize }}</p>
+      </div> -->
+    </div>
+    {% endfor %}
+  </div>
+  {% endfor %}
 </div>
 
-{% for website in page.websites %}
+<!-- {% for website in page.websites %}
 <div class="modal fade" id="{{ website.name }}-modal" tabindex="-1" role="dialog" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
     <div class="modal-content">
@@ -128,4 +161,4 @@ websites:
     </div>
   </div>
 </div>
-{% endfor %}
+{% endfor %} -->
