@@ -12,14 +12,30 @@ $(window).scroll(function() {
 });
 
 function openModal(websiteName){
+    // Show background
     document.getElementsByClassName('bg-modal')[0].style.display = 'flex';
+
+    // Move modal down
+    // document.getElementById('modal-' + websiteName).style.transform = 'translateY(25%)';
+
+    // Show modal
     document.getElementById('modal-' + websiteName).style.display = 'flex';
+
+    // Move modal up
+    // document.getElementById('modal-' + websiteName).style.transform = 'none';
+
+    // Prevent scrolling
     document.getElementsByTagName('body')[0].style.overflow = 'hidden';
 }
 
 function closeModal(websiteName){
+    // Hide background
     document.getElementsByClassName('bg-modal')[0].style.display = 'none';
+
+    // Hide modal
     document.getElementById('modal-' + websiteName).style.display = 'none';
+
+    // Allow scrolling
     document.getElementsByTagName('body')[0].style.overflow = 'auto';
 }
 
