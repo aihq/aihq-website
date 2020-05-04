@@ -78,29 +78,6 @@ websites:
   </div>
 </section>
 
-<!-- <section>
-  <div class="container">
-    {% for website in page.websites %}
-    {% if forloop.index == 4 %}
-    </div>
-    <div class="row">
-    <div class="col-sm-2"></div>
-    {% endif %}
-    <div class="col-sm-4">
-      <div class="fancy-card-container">
-        <div class="fancy-card" data-toggle="modal" data-target="#{{ website.name }}-modal">
-          <div class="fancy-card-overlay"></div>
-          <img id="card-image-{{ website.name }}" src="{{ site.baseurl }}/assets/img/{{ website.name }}-logo.png">
-        </div>
-      </div>
-    </div>
-    {% if forloop.index == 5 %}
-    <div class="col-sm-2"></div>
-    {% endif %}
-    {% endfor %}
-  </div>
-</section> -->
-
 <section>
   <div class="website-cards">
     {% for website in page.websites %}

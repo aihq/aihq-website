@@ -2,12 +2,12 @@ $(window).scroll(function() {
     if($(this).scrollTop() > ($('#site-header').height())) {
         $('#site-header').addClass('opaque');
 
-        $('#logo').attr('src', '/aihq-website/assets/img/logo-black.png');
+        $('#logo').attr('src', '/assets/img/logo-black.png');
     } 
     else {
         $('#site-header').removeClass('opaque');
 
-        $('#logo').attr('src', '/aihq-website/assets/img/logo-white.png');
+        $('#logo').attr('src', '/assets/img/logo-white.png');
     }
 });
 
