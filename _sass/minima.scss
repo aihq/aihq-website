@@ -13,10 +13,10 @@ $spacing-unit:     30px !default;
 $grey-color:       #828282 !default;
 $grey-color-light: lighten($grey-color, 20%) !default;
 $grey-color-really-light: lighten($grey-color-light, 22%) !default;
-$grey-color-dark:  darken($grey-color, 25%) !default;
+$grey-color-dark:  darken($grey-color, 5%) !default;
 
 $blue-color:       #2a7ae2 !default;
-$blue-color-dark:  darken($blue-color, 25%) !default;
+$blue-color-dark:  darken($blue-color, 5%) !default;
 $blue-color-light:  lighten($blue-color, 35%) !default;
 
 $primary-color:    $blue-color !default;
