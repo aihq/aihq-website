@@ -2,12 +2,12 @@ $(window).scroll(function() {
     if($(this).scrollTop() > ($('#site-header').height())) {
         $('#site-header').addClass('opaque');
 
-        $('#logo').attr('src', '/assets/img/logo-black.png');
+        $('#logo').attr('src', '/assets/img/logo-black.svg');
     } 
     else {
         $('#site-header').removeClass('opaque');
 
-        $('#logo').attr('src', '/assets/img/logo-white.png');
+        $('#logo').attr('src', '/assets/img/logo-white.svg');
     }
 });
 
@@ -52,4 +52,8 @@ for(i = 0; i < acc.length; i++){
             panel.style.maxHeight = panel.scrollHeight + 'px';
         }
     });
+}
+
+function sortConferences(){
+    var filterKeywords = document.getElementById('filterKeywords').value;
 }
