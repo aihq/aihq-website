@@ -7,7 +7,33 @@ hero-title: Camps
 
 <section>
     <div class="camp-container">
-        {% for camp in site.data.camps %}
+        <h3><em>Disclaimer:</em>Due to the pandemic, please confirm with the organizer that the events</h3>
+        <div class="filter-container">
+            <div class="filter-item" id="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="filterKeywords">
+            </div>
+
+            <div class="filter-item">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="text" id="filterLocation">
+            </div>
+
+            <div class="filter-item" style="border: 0;">
+                <span class="dropdown-el">
+                    <!-- <i class="fas fa-sort"></i> -->
+                    <input type="radio" name="sortType" value="alphabetical" checked="checked" id="sort-alphabetical"><label for="sort-alphabetical">Alphabetical</label>
+                    <input type="radio" name="sortType" value="newest" id="sort-newest"><label for="sort-newest">Newest</label>
+                </span> 
+            </div>
+
+            <a class="button border" onclick="filterEvents('camps')">Go</a>
+        </div>
+
+        <div id="camps">
+
+        </div>
+        <!-- {% for camp in site.data.camps %}
         <div class="camp">
             <h4><a href="{{ camp.link }}" target="_blank">{{ camp.name }}</a></h4>
             <p class="camp-location">
@@ -22,6 +48,6 @@ hero-title: Camps
                 {{ camp.description }}
             </p>
         </div>
-        {% endfor %}
+        {% endfor %} -->
     </div>
 </section>

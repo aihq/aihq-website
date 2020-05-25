@@ -7,21 +7,48 @@ hero-title: A one-stop list of tech-related and AI events near you
 
 <section>
     <div class="conference-container">
-        {% for conference in site.data.conferences %}
-        <div class="conference">
-            <h4><a href="{{ conference.link }}" target="_blank">{{ conference.name }}</a></h4>
-            <p class="conference-location">
+        <div class="filter-container">
+            <div class="filter-item" id="search-bar">
+                <i class="fas fa-search"></i>
+                <input type="text" id="filterKeywords">
+            </div>
+
+            <div class="filter-item">
                 <i class="fas fa-map-marker-alt"></i>
-                {{ conference.location }}
-            </p>
-            <p class="conference-date">
-                <i class="fas fa-calendar-day"></i>
-                {{ conference.date }}
-            </p>
-            <p class="conference-description">
-                {{ conference.description }}
-            </p>
+                <input type="text" id="filterLocation">
+            </div>
+
+            <div class="filter-item" style="border: 0;">
+                <span class="dropdown-el">
+                    <!-- <i class="fas fa-sort"></i> -->
+                    <input type="radio" name="sortType" value="alphabetical" checked="checked" id="sort-alphabetical"><label for="sort-alphabetical">Alphabetical</label>
+                    <input type="radio" name="sortType" value="newest" id="sort-newest"><label for="sort-newest">Newest</label>
+                </span> 
+            </div>
+
+            <a class="button border" onclick="filterEvents('conferences')">Go</a>
         </div>
-        {% endfor %}
+
+        <div id="conferences">
+
+        </div>
+
+        <!-- {% assign conferences = site.data.conferences | where_exp: "item","item.name contains 'T'" %}
+        {% for conference in conferences %}
+            <div class="conference">
+                <h4><a href="{{ conference.link }}" target="_blank">{{ conference.name }}</a></h4>
+                <p class="conference-location">
+                    <i class="fas fa-map-marker-alt"></i>
+                    {{ conference.location }}
+                </p>
+                <p class="conference-date">
+                    <i class="fas fa-calendar-day"></i>
+                    {{ conference.date }}
+                </p>
+                <p class="conference-description">
+                    {{ conference.description }}
+                </p>
+            </div>
+        {% endfor %} -->
     </div>
 </section>
