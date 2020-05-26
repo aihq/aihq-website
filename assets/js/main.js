@@ -134,12 +134,12 @@ function fillEvents(events, type) {
     if(type == 'conferences') {
         for(i = 0; i < events.length; i++) {
             var conference = events[i];
-            html += '<div class="conference"><h4><a href="' + conference.link + '" target="_blank">' + conference.name + '</a></h4><p class="conference-location"><i class="fas fa-map-marker-alt"></i>' + conference.location + '</p><p class="conference-date"><i class="fas fa-calendar-day"></i>' + conference.date + '</p><p class="conference-description">' + conference.description + '</p></div>';
+            html += `<div class="conference"><h4><a href="${conference.link}" target="_blank">${conference.name}</a></h4><p class="conference-location"><i class="fas fa-map-marker-alt"></i>${conference.location}</p><p class="conference-date"><i class="fas fa-calendar-day"></i>${conference.date}</p><p class="conference-description">${conference.description}</p></div>`;
         }
     } else if(type == 'camps') {
         for(i = 0; i < events.length; i++) {
             var camp = events[i];
-            html += '<div class="camp"><h4><a href="' + camp.link + '" target="_blank">' + camp.name + '</a></h4><p class="camp-location"><i class="fas fa-map-marker-alt"></i>' + camp.location + '</p><p class="camp-date"><i class="fas fa-calendar-day"></i>' + camp.date + '</p><p class="camp-description">' + camp.description + '</p></div>';
+            html += `<div class="camp"><h4><a href="${camp.link}" target="_blank">${camp.name}</a></h4><p class="camp-location"><i class="fas fa-map-marker-alt"></i>${camp.location}</p><p class="camp-date"><i class="fas fa-calendar-day"></i>${camp.date}</p><p class="camp-description">${camp.description}</p></div>`;
         }
     }
 
