@@ -507,11 +507,18 @@ h2.section-title::after {
     align-items: center;
     justify-content: space-around;
     margin-top: 7.5%;
+    flex-wrap: wrap;
 
     .team-member{
         padding: 3%;
         text-align: center;
-        width: 40%;
+        width: 365px;
+        height: 730px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 15px;
 
         img {
             width: 75%;
@@ -525,7 +532,8 @@ h2.section-title::after {
 
         hr {
             margin: 5% 5%;
-            color: $grey-color
+            color: $grey-color;
+            width: 75%;
         }
 
         .socials {
@@ -533,6 +541,7 @@ h2.section-title::after {
             flex-direction: row;
             justify-content: space-around;
             align-items: center;
+            width: 100%;
 
             a {
                 display: flex;
