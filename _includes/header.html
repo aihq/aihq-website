@@ -1,8 +1,17 @@
 <header id="site-header">
   <img src="{{ '/assets/img/logo-white.svg' | relative_url }}" alt="logo" class="logo" id="logo">
+
+  <!-- Mobile dropdown navbar -->
+  <div id="hamburger-icon" onclick="toggleNav()">
+    <input type="checkbox" id="hamburger-button"/>
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+
   {% assign pages = site.data.navbar %}
   <nav class="navbar">
-    <ul class="navbar-nav">
+    <ul id="navbar-nav">
       {% for page in pages %}
         <li class="nav-item">
           {% if page.subpages %}
@@ -17,8 +26,7 @@
               </div>
               <div class="dropdown-content">
                 {%- for subpage in page.subpages -%}
-                  <a class="dropdown-link" {%- if subpage.title contains page.title -%} id="active" {%- endif -%}
-                    href="{{ subpage.url | relative_url }}">{{ subpage.title | escape }}</a>
+                  <a class="dropdown-link" href="{{ subpage.url | relative_url }}">{{ subpage.title | escape }}</a>
                 {%- endfor -%}
               </div>
             </div>
@@ -31,4 +39,5 @@
       {% endfor %}
     </ul>
   </nav>
+
 </header>

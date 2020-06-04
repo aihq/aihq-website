@@ -145,3 +145,11 @@ function fillEvents(events, type) {
 
     document.getElementById(type).innerHTML = html;
 }
+
+function toggleNav() {
+    if(document.querySelector('input[id="hamburger-button"]').checked) {
+        document.getElementById("navbar-nav").style.transform = "translateX(0)";
+    } else {
+        document.getElementById("navbar-nav").style.transform = "translateX(100%)";
+    }
+}
