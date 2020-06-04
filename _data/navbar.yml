@@ -11,6 +11,17 @@
       url: /practice/
 - title: Ethics
   url: /ethics/
+  subpages: 
+    - title: Diversity
+      url: /ethics/diversity
+    - title: Institutional Violence
+      url: /ethics/institutional-violence
+    - title: Trust
+      url: /ethics/trust
+    - title: Regulation
+      url: /ethics/regulation
+    - title: Privacy
+      url: /ethics/privacy
 - title: Events
   # url: /events/
   subpages: 
