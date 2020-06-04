@@ -82,7 +82,6 @@ websites:
   <div class="website-cards">
     {% for website in page.websites %}
     <div class="fancy-card hover-effect" onclick="openModal('{{ website.name }}')">
-      <div class="fancy-card-overlay"></div>
       <img id="card-image-{{ website.name }}" src="{{ site.baseurl }}/assets/img/{{ website.name }}-logo.png">
     </div>
     {% endfor %}
