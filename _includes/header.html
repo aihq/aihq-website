@@ -4,26 +4,30 @@
   <nav class="navbar">
     <ul class="navbar-nav">
       {% for page in pages %}
-      <li class="nav-item">
-        {% if page.subpages %}
-        <div class="dropdown">
-          <div class="dropbtn nav-link">
-            {{ page.title | escape }}
-            <i class="fa fa-caret-down"></i>
-          </div>
-          <div class="dropdown-content">
-            {%- for subpage in page.subpages -%}
-            <a class="dropdown-link" {%- if subpage.title contains page.title -%} id="active" {%- endif -%}
-              href="{{ subpage.url | relative_url }}">{{ subpage.title | escape }}</a>
-            {%- endfor -%}
-          </div>
-        </div>
-        {% else %}
-        <a href="{{ page.url | relative_url }}" class="nav-link">
-          <span class="link-text">{{ page.title | escape }}</span>
-        </a>
-        {% endif %}
-      </li>
+        <li class="nav-item">
+          {% if page.subpages %}
+            <div class="dropdown">
+              <div class="dropbtn nav-link">
+                {% if page.url %}
+                  <a href="{{ page.url }}" class="nav-link">{{ page.title | escape }}</a>
+                {% else %}
+                  {{ page.title | escape }}
+                {% endif %}
+                <i class="fa fa-caret-down"></i>
+              </div>
+              <div class="dropdown-content">
+                {%- for subpage in page.subpages -%}
+                  <a class="dropdown-link" {%- if subpage.title contains page.title -%} id="active" {%- endif -%}
+                    href="{{ subpage.url | relative_url }}">{{ subpage.title | escape }}</a>
+                {%- endfor -%}
+              </div>
+            </div>
+          {% else %}
+            <a href="{{ page.url | relative_url }}" class="nav-link">
+              <span class="link-text">{{ page.title | escape }}</span>
+            </a>
+          {% endif %}
+        </li>
       {% endfor %}
     </ul>
   </nav>
