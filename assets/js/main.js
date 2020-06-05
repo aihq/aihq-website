@@ -131,17 +131,60 @@ function fillEvents(events, type) {
     // console.log(type);
 
     var html = '';
-    if(type == 'conferences') {
-        for(i = 0; i < events.length; i++) {
-            var conference = events[i];
-            html += `<div class="conference"><h4><a href="${conference.link}" target="_blank">${conference.name}</a></h4><p class="conference-location"><i class="fas fa-map-marker-alt"></i>${conference.location}</p><p class="conference-date"><i class="fas fa-calendar-day"></i>${conference.date}</p><p class="conference-description">${conference.description}</p></div>`;
+
+    for(i = 0; i < events.length; i++) {
+        var event = events[i];
+        var link = event.link;
+        var name = event.name;
+        var date = event.date;
+        var description = event.description;
+
+        var location;
+        if(event.location.includes(';')) {
+            location = 'Multiple Locations';
+        } else {
+            location = event.location;
         }
-    } else if(type == 'camps') {
-        for(i = 0; i < events.length; i++) {
-            var camp = events[i];
-            html += `<div class="camp"><h4><a href="${camp.link}" target="_blank">${camp.name}</a></h4><p class="camp-location"><i class="fas fa-map-marker-alt"></i>${camp.location}</p><p class="camp-date"><i class="fas fa-calendar-day"></i>${camp.date}</p><p class="camp-description">${camp.description}</p></div>`;
-        }
+
+        html += `<div class="event"><h4><a href="${link}" target="_blank">${name}</a></h4><p class="location"><i class="fas fa-map-marker-alt"></i>${location}</p><p class="date"><i class="fas fa-calendar-day"></i>${date}</p><p class="description">${description}</p></div>`;
     }
+
+    // if(type == 'conferences') {
+    //     for(i = 0; i < events.length; i++) {
+    //         var conference = events[i];
+    //         var link = conference.link;
+    //         var name = conference.name;
+    //         var date = conference.date;
+    //         var description = conference.description;
+
+    //         var location;
+    //         if(conference.location.includes(';')) {
+    //             location = 'Multiple Locations';
+    //         } else {
+    //             location = conference.location;
+    //         }
+
+    //         html += `<div class="conference"><h4><a href="${link}" target="_blank">${name}</a></h4><p class="conference-location"><i class="fas fa-map-marker-alt"></i>${location}</p><p class="conference-date"><i class="fas fa-calendar-day"></i>${date}</p><p class="conference-description">${description}</p></div>`;
+    //     }
+    // } else if(type == 'camps') {
+    //     for(i = 0; i < events.length; i++) {
+    //         var camp = events[i];
+
+    //         var link = camp.link;
+    //         var name = camp.name;
+    //         var date = camp.date;
+    //         var description = camp.description;
+
+    //         var location;
+    //         if(camp.location.includes(';')) {
+    //             location = 'Multiple Locations';
+    //         } else {
+    //             location = camp.location;
+    //         }
+
+    //         html += `<div class="camp"><h4><a href="${link}" target="_blank">${name}</a></h4><p class="camp-location"><i class="fas fa-map-marker-alt"></i>${location}</p><p class="camp-date"><i class="fas fa-calendar-day"></i>${date}</p><p class="camp-description">${description}</p></div>`;
+    //     }
+    // }
 
     document.getElementById(type).innerHTML = html;
 }

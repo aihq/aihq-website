@@ -96,10 +96,10 @@ websites:
 
     <h5>Suggested Courses:</h5>
     {% for course in website.courses %}
-    <h6 class="course-name">
+    <p class="course-name">
       <b><a href="{{ course.link }}" target="_blank">{{ course.name }}</a></b>
       <i class="fas fa-chevron-down"></i>
-    </h6>
+    </p>
     <div class="course-panel">
       <p>{{ course.description }}</p>
       <!-- <div class="course-difficulty">

@@ -68,6 +68,14 @@ input {
     font-size: 0.75rem;
 }
 
+p {
+    text-align: justify;
+
+    @media screen and (min-width: 500px) {
+        text-align: left;
+    }
+}
+
 // p { 
 //     font-size: 0.5rem;
 //     @include fluid-type($min_width, $max_width, $mod_1 *$min_font, $mod_2 *$min_font);
@@ -120,6 +128,10 @@ header{
     transition: background-color 500ms ease 0s;
     z-index: 1;
     // padding: 0 5rem;
+
+    @media screen and (min-width: 1000px) {
+        height: 2.5rem;
+    }
 
     &.opaque{
         background-color: rgb(255,255,255);
@@ -252,7 +264,7 @@ header{
             box-shadow: none;
 
             .nav-link {
-                color: white !important;
+                color: white;
             }
 
             .dropdown-link {
@@ -278,6 +290,10 @@ header{
                 transition: all 0.3s ease 0s;
                 font-weight: 500;
                 color: black;
+
+                @media screen and (min-width: 1000px) {
+                    color: white;
+                }
     
                 &:hover{
                     color: $primary-color !important;
@@ -370,7 +386,7 @@ header{
     border-radius: 30px;
     background-color: white;
     transition: transform .2s;
-    margin: 5%;
+    margin: 15px;
     // margin: 3% auto 3% auto;
     // padding: 10%;
 
@@ -566,7 +582,6 @@ h2.section-title::after {
     .fancy-card{
         width: 250px;
         height: 250px;
-        margin: 2.5%;
         display: flex;
         align-items: center;
 
@@ -627,7 +642,7 @@ h2.section-title::after {
     }
 }
 
-.close{
+.close {
     position: absolute;
     top: 0;
     right: 20px;
@@ -636,7 +651,7 @@ h2.section-title::after {
     cursor: pointer;
 }
 
-.course-name{
+.course-name {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -646,11 +661,13 @@ h2.section-title::after {
     margin: 0;
     transition: 0.4s;
 
-    &.active i{
+    &.active i {
         transform: rotate(180deg);
     }
-    i{
+
+    i {
         transition: 0.4s;
+        margin-left: 15px;
     }
 }
 
@@ -662,8 +679,7 @@ h2.section-title::after {
     text-align: justify;
 }
 
-.conference-container,
-.camp-container{
+.event-container {
     width: 90%;
     min-width: 400px;
     margin: auto;
@@ -806,15 +822,12 @@ h2.section-title::after {
         }
     }
 
-    .conference,
-    .camp{
+    .events {
         border-top: 1px solid rgba(7,0,0,0.07);
         padding: 5%;
 
-        .conference-location,
-        .conference-date,
-        .camp-location,
-        .camp-date{
+        .location,
+        .date {
             font-size: 16px;
             color: gray;
             font-weight: bold;
@@ -867,7 +880,8 @@ h2.section-title::after {
 .disclaimer {
     width: 75%;
     margin: auto;
-    text-align: justify;
+    text-align: center;
+    margin-bottom: 15px;
 }
 
 p.dash-bullet::before {
