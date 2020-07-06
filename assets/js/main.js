@@ -1,5 +1,6 @@
-camps = [];
-conferences = [];
+// camps = [];
+// conferences = [];
+events = [];
 
 $(window).scroll(function() {
     if($(this).scrollTop() > ($('#site-header').height())) {
@@ -84,19 +85,22 @@ $(document).ready(function() {
 });
 
 function processCSV(csv, type) {
-    if(type == 'conferences') {
-        conferences = $.csv.toObjects(csv);  
-        filterEvents('conferences');
-    } else if(type == 'camps') {
-        camps = $.csv.toObjects(csv);  
-        filterEvents('camps');
-    }
-
+    // if(type == 'conferences') {
+    //     conferences = $.csv.toObjects(csv);  
+    //     filterEvents('conferences');
+    // } else if(type == 'camps') {
+    //     camps = $.csv.toObjects(csv);  
+    //     filterEvents('camps');
+    // }
+    events = $.csv.toObjects(csv);  
+    filterEvents(type);
 }
 
 function filterEvents(type){
+    // Get searched keywords
     var filterKeywords = document.getElementById('filterKeywords').value;
     
+    // Get SortBy type
     var radioButtons = document.querySelectorAll('input[name="sortType"]');
     var sortBy;
     for(radioButton of radioButtons) {
@@ -105,15 +109,21 @@ function filterEvents(type){
             break;
         }
     }
-    // console.log(sortBy);
     
-    var filteredEvents;
+    // Get searched location
+    var filterLocation = document.getElementById('filterLocation').value;
 
-    if(type == 'conferences') {
-        filteredEvents = conferences.filter(conference => conference.name.toString().includes(filterKeywords));
-    } else if(type == 'camps') {
-        filteredEvents = camps.filter(camps => camps.name.toString().includes(filterKeywords));
-    }
+    // Filter by keywords
+    var filteredEvents = events.filter(event => event.name.toString().includes(filterKeywords));
+
+    // Filter by location
+    filteredEvents = filteredEvents.filter(event => event.location.toString().includes(filterLocation));
+
+    // if(type == 'conferences') {
+    //     filteredEvents = conferences.filter(conference => conference.name.toString().includes(filterKeywords));
+    // } else if(type == 'camps') {
+    //     filteredEvents = camps.filter(camps => camps.name.toString().includes(filterKeywords));
+    // }
 
     switch(sortBy) {
         case 'alphabetical':
