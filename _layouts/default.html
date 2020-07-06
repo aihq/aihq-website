@@ -4,7 +4,6 @@
 {%- include head.html -%}
 
 <body id="{{ page.title }}">
-
   {%- include header.html -%}
 
   <!-- <h2 class="section-title">{{ page.title }}</h2> -->
@@ -26,6 +25,9 @@
 
   <!-- JavaScript -->
   <script defer type="text/javascript" src="{{ '/assets/js/main.js' | relative_url }}"></script>
+
+  <!-- Google Analytics -->
+  {% include google-analytics.html %}
 </body>
 
 </html>
