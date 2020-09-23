@@ -482,6 +482,11 @@ header{
 
             .card-description{
                 padding: 0 10%;
+
+                p {
+                    margin-top: 10px;
+                    text-align: center !important;
+                }
             }
         }
     }
@@ -891,4 +896,16 @@ h2.section-title::after {
 p.dash-bullet::before {
     content: "-";
     margin: 0 20px;
+}
+
+.footer-col-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .col {
+        margin: 0;
+        padding: 0 30px;
+        width: 33.33%;
+    }
 }

@@ -1,12 +1,25 @@
 <footer class="site-footer h-card">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
+  <data class="u-url" href="{{ '/' | relative_url }}"></data>
 
   <div class="wrapper">
 
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
+    <!-- <h2 class="footer-heading">{{ site.title | escape }}</h2> -->
 
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
+    <div class="footer-col-wrapper" style="font-size: 12px;">
+      <div class="col" style="text-align: left;">
+        <a href="{{ '/' | relative_url }}">Home</a>
+        ⋅ 
+        <a href="{{ '/mission' | relative_url }}">Mission</a>
+        ⋅ 
+        <a href="{{ '/contact' | relative_url }}">Contact</a>
+      </div>
+      <div class="col" style="text-align: center;">
+        © AIHQ 2020. All Rights Reserved. 
+      </div>
+      <div class="col" style="text-align: right;">
+        Developed by <a href="https://www.linkedin.com/in/milanfc/">Milan Ferus-Comelo</a> 
+      </div>
+      <!-- <div class="footer-col footer-col-1">
         <ul class="contact-list">
           <li class="p-name">
             {%- if site.author -%}
@@ -27,7 +40,7 @@
 
       <div class="footer-col footer-col-3">
         <p>{{- site.description | escape -}}</p>
-      </div>
+      </div> -->
     </div>
 
   </div>
